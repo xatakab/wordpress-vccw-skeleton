@@ -1,0 +1,39 @@
+{
+    "name": "xearts/wordpress-vccw-skeleton",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "T.Takabayashi",
+            "email": "t.takabayashi@xearts.jp"
+        }
+    ],
+    "keywords":[
+        "Skeleton",
+        "WordPress"
+    ],
+    "require": {
+        "vccw-team/vccw": "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "vccw-team/vccw",
+                "version": "dev-master",
+                "source": {
+                    "url": "https://github.com/vccw-team/vccw.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        }
+    ],
+    "autoload":{
+        "psr-4":{
+            "Xearts\\Wvs\\": "src/"
+        }
+    },
+    "scripts":{
+        "post-create-project-cmd": "Xearts\\Wvs\\Installer::postInstall"
+    }
+}

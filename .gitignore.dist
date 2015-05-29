@@ -13,7 +13,6 @@ wp-content/uploads/
 wp-content/wp-cache-config.php
 
 composer.phar
-phpunit.phar
-vendor/
+/vendor/
 
 /.idea/
